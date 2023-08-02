@@ -71,11 +71,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classlar\Cari Listesi Classlar\GosterFormCariListesi.cs" />
+    <Compile Include="Classlar\Cari Listesi Classlar\GuncelleButtonCariListesi.cs" />
+    <Compile Include="Classlar\Cari Listesi Classlar\KaydetButtonCariListesi.cs" />
+    <Compile Include="Classlar\Cari Listesi Classlar\ListeleButtonCariListesi.cs" />
+    <Compile Include="Classlar\Cari Listesi Classlar\SilButtonCariListesi.cs" />
     <Compile Include="Classlar\Kategori Classlar\GosterFormKategori.cs" />
     <Compile Include="Classlar\Kategori Classlar\GuncelleButtonKategori.cs" />
     <Compile Include="Classlar\Kategori Classlar\KaydetButtonKategori.cs" />
     <Compile Include="Classlar\Kategori Classlar\ListeleButtonKategori.cs" />
     <Compile Include="Classlar\Kategori Classlar\SilButtonKategori.cs" />
+    <Compile Include="Classlar\Yeni Cari Classlar\KaydetButtonYeniCari.cs" />
     <Compile Include="Classlar\Yeni KategoriClasslar\KaydetButtonYeniKategori.cs" />
     <Compile Include="Classlar\Yeni Ürün Classlar\KaydetButtonYeniUrun.cs" />
     <Compile Include="Classlar\Ürün Listesi Classlar\GosterFormUrunListesi.cs" />
@@ -125,6 +130,12 @@
     </Compile>
     <Compile Include="Formlar\FRMUrunListesi.Designer.cs">
       <DependentUpon>FRMUrunListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FRMYeniCari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FRMYeniCari.Designer.cs">
+      <DependentUpon>FRMYeniCari.cs</DependentUpon>
     </Compile>
     <Compile Include="Formlar\FRMYeniKategori.cs">
       <SubType>Form</SubType>
@@ -224,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FRMUrunListesi.resx">
       <DependentUpon>FRMUrunListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FRMYeniCari.resx">
+      <DependentUpon>FRMYeniCari.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FRMYeniKategori.resx">
       <DependentUpon>FRMYeniKategori.cs</DependentUpon>

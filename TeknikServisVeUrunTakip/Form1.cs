@@ -72,5 +72,12 @@ namespace TeknikServisVeUrunTakip
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void BtnYeniCari_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FRMYeniCari fr = new Formlar.FRMYeniCari();
+            
+            fr.Show();
+        }
     }
 }

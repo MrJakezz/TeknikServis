@@ -78,3 +78,4 @@ C:\Users\Erhan\source\repos\TeknikServisVeUrunTakip\TeknikServisVeUrunTakip\bin\
 C:\Users\Erhan\source\repos\TeknikServisVeUrunTakip\TeknikServisVeUrunTakip\bin\Debug\DevExpress.Xpo.v23.1.xml
 C:\Users\Erhan\source\repos\TeknikServisVeUrunTakip\TeknikServisVeUrunTakip\obj\Debug\TeknikServisVeUrunTakip.Formlar.FRMCariListesi.resources
 C:\Users\Erhan\source\repos\TeknikServisVeUrunTakip\TeknikServisVeUrunTakip\obj\Debug\TeknikServisVeUrunTakip.Formlar.FRMCariChart.resources
+C:\Users\Erhan\source\repos\TeknikServisVeUrunTakip\TeknikServisVeUrunTakip\obj\Debug\TeknikServisVeUrunTakip.Formlar.FRMYeniCari.resources
