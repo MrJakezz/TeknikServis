@@ -13,10 +13,10 @@ namespace TeknikServisVeUrunTakip.Classlar.Kategori_Classlar
         public TextEdit TXTKategoriAd;
         public TextEdit TXTKategoriID;
 
-        public GuncelleButtonKategori(TextEdit txtKategoriAd, TextEdit txtKategoriID)
+        public GuncelleButtonKategori(TextEdit kategoriAd, TextEdit kategoriId)
         {
-            TXTKategoriAd = txtKategoriAd;
-            TXTKategoriID = txtKategoriID;
+            TXTKategoriAd = kategoriAd;
+            TXTKategoriID = kategoriId;
         }
 
         public void Guncelle()

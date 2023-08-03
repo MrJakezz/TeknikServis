@@ -79,3 +79,5 @@ C:\Users\Erhan\source\repos\TeknikServisVeUrunTakip\TeknikServisVeUrunTakip\bin\
 C:\Users\Erhan\source\repos\TeknikServisVeUrunTakip\TeknikServisVeUrunTakip\obj\Debug\TeknikServisVeUrunTakip.Formlar.FRMCariListesi.resources
 C:\Users\Erhan\source\repos\TeknikServisVeUrunTakip\TeknikServisVeUrunTakip\obj\Debug\TeknikServisVeUrunTakip.Formlar.FRMCariChart.resources
 C:\Users\Erhan\source\repos\TeknikServisVeUrunTakip\TeknikServisVeUrunTakip\obj\Debug\TeknikServisVeUrunTakip.Formlar.FRMYeniCari.resources
+C:\Users\Erhan\source\repos\TeknikServisVeUrunTakip\TeknikServisVeUrunTakip\obj\Debug\TeknikServisVeUrunTakip.Formlar.FRMDepartman.resources
+C:\Users\Erhan\source\repos\TeknikServisVeUrunTakip\TeknikServisVeUrunTakip\obj\Debug\TeknikServisVeUrunTakip.Formlar.FRMYeniDepartman.resources

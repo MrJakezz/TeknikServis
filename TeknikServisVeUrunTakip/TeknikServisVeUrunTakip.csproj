@@ -75,13 +75,19 @@
     <Compile Include="Classlar\Cari Listesi Classlar\KaydetButtonCariListesi.cs" />
     <Compile Include="Classlar\Cari Listesi Classlar\ListeleButtonCariListesi.cs" />
     <Compile Include="Classlar\Cari Listesi Classlar\SilButtonCariListesi.cs" />
+    <Compile Include="Classlar\Departman Classlar\GosterFormDepartman.cs" />
+    <Compile Include="Classlar\Departman Classlar\GuncelleButtonDepartman.cs" />
+    <Compile Include="Classlar\Departman Classlar\KaydetButtonDepartman.cs" />
+    <Compile Include="Classlar\Departman Classlar\ListeleButtonDepartman.cs" />
+    <Compile Include="Classlar\Departman Classlar\SilButtonDepartman.cs" />
     <Compile Include="Classlar\Kategori Classlar\GosterFormKategori.cs" />
     <Compile Include="Classlar\Kategori Classlar\GuncelleButtonKategori.cs" />
     <Compile Include="Classlar\Kategori Classlar\KaydetButtonKategori.cs" />
     <Compile Include="Classlar\Kategori Classlar\ListeleButtonKategori.cs" />
     <Compile Include="Classlar\Kategori Classlar\SilButtonKategori.cs" />
     <Compile Include="Classlar\Yeni Cari Classlar\KaydetButtonYeniCari.cs" />
-    <Compile Include="Classlar\Yeni KategoriClasslar\KaydetButtonYeniKategori.cs" />
+    <Compile Include="Classlar\Yeni Departman Classlar\KaydetButtonYeniDepartman.cs" />
+    <Compile Include="Classlar\Yeni Kategori Classlar\KaydetButtonYeniKategori.cs" />
     <Compile Include="Classlar\Yeni Ürün Classlar\KaydetButtonYeniUrun.cs" />
     <Compile Include="Classlar\Ürün Listesi Classlar\GosterFormUrunListesi.cs" />
     <Compile Include="Classlar\Ürün Listesi Classlar\GuncelleButtonUrunListesi.cs" />
@@ -106,6 +112,12 @@
     </Compile>
     <Compile Include="Formlar\FRMCariListesi.Designer.cs">
       <DependentUpon>FRMCariListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FRMDepartman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FRMDepartman.Designer.cs">
+      <DependentUpon>FRMDepartman.cs</DependentUpon>
     </Compile>
     <Compile Include="Formlar\FRMIstatistik.cs">
       <SubType>Form</SubType>
@@ -137,6 +149,12 @@
     <Compile Include="Formlar\FRMYeniCari.Designer.cs">
       <DependentUpon>FRMYeniCari.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\FRMYeniDepartman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FRMYeniDepartman.Designer.cs">
+      <DependentUpon>FRMYeniDepartman.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\FRMYeniKategori.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +168,7 @@
       <DependentUpon>FRMYeniUrun.cs</DependentUpon>
     </Compile>
     <Compile Include="LINQ Sorgular\CariChartLINQ.cs" />
+    <Compile Include="LINQ Sorgular\DepartmanLINQ.cs" />
     <Compile Include="LINQ Sorgular\MarkaIstatistikleriLINQ.cs" />
     <Compile Include="LINQ Sorgular\UrunIstatistikleriLINQ.cs" />
     <Compile Include="Model1.Context.cs">
@@ -224,6 +243,9 @@
     <EmbeddedResource Include="Formlar\FRMCariListesi.resx">
       <DependentUpon>FRMCariListesi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FRMDepartman.resx">
+      <DependentUpon>FRMDepartman.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FRMIstatistik.resx">
       <DependentUpon>FRMIstatistik.cs</DependentUpon>
     </EmbeddedResource>
@@ -238,6 +260,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FRMYeniCari.resx">
       <DependentUpon>FRMYeniCari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FRMYeniDepartman.resx">
+      <DependentUpon>FRMYeniDepartman.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FRMYeniKategori.resx">
       <DependentUpon>FRMYeniKategori.cs</DependentUpon>

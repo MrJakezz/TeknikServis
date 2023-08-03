@@ -44,22 +44,30 @@ namespace TeknikServisVeUrunTakip.Classlar.Cari_Listesi_Classlar
 
             TBLCari product = new TBLCari();
 
-            product.AD = TXTAd.Text;
-            product.SOYAD = TXTSoyad.Text;
-            product.TELEFON = TXTTelNo.Text;
-            product.MAIL = TXTMail.Text;
-            product.IL = TXTIl.Text;
-            product.ILCE = TXTIlce.Text;
-            product.BANKA = TXTBanka.Text;
-            product.VERGIDAIRESI = TXTVergiDairesi.Text;
-            product.VERGINO = TXTVergiNo.Text;
-            product.STATU = TXTStatu.Text;
-            product.ADRES = TXTAdres.Text;
+            if (TXTAd.Text != "" && TXTSoyad.Text != "" && TXTTelNo.Text != "" && TXTMail.Text != "" && TXTIl.Text != "" && TXTIlce.Text != "" && TXTBanka.Text != "" && TXTVergiDairesi.Text != "" && TXTVergiNo.Text != "" && TXTStatu.Text != "" && TXTAdres.Text != "")
+            {
+                product.AD = TXTAd.Text;
+                product.SOYAD = TXTSoyad.Text;
+                product.TELEFON = TXTTelNo.Text;
+                product.MAIL = TXTMail.Text;
+                product.IL = TXTIl.Text;
+                product.ILCE = TXTIlce.Text;
+                product.BANKA = TXTBanka.Text;
+                product.VERGIDAIRESI = TXTVergiDairesi.Text;
+                product.VERGINO = TXTVergiNo.Text;
+                product.STATU = TXTStatu.Text;
+                product.ADRES = TXTAdres.Text;
 
-            DB.TBLCari.Add(product);
-            DB.SaveChanges();
+                DB.TBLCari.Add(product);
+                DB.SaveChanges();
 
-            MessageBox.Show("Cari başarıyla kaydedildi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                MessageBox.Show("Cari başarıyla kaydedildi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Question);
+            }
+
+            else
+            {
+                MessageBox.Show("Lütfen tüm alanları doldurunuz!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

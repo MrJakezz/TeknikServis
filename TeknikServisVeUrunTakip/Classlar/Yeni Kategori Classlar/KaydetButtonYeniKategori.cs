@@ -23,12 +23,20 @@ namespace TeknikServisVeUrunTakip.Classlar.Yeni_KategoriClasslar
 
             TBLKategori product = new TBLKategori();
 
-            product.AD = txtKategoriAd.Text;
+            if (txtKategoriAd.Text != "")
+            {
+                product.AD = txtKategoriAd.Text;
 
-            DB.TBLKategori.Add(product);
-            DB.SaveChanges();
+                DB.TBLKategori.Add(product);
+                DB.SaveChanges();
 
-            MessageBox.Show("Kategori başarıyla kaydedildi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                MessageBox.Show("Kategori başarıyla kaydedildi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Question);
+            }
+
+            else
+            {
+                MessageBox.Show("Lütfen tüm alanları doldurunuz!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

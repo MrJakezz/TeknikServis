@@ -45,6 +45,8 @@
             this.TXTAd = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.TXTMail = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
             this.TXTIlce = new DevExpress.XtraEditors.TextEdit();
             this.TXTIl = new DevExpress.XtraEditors.TextEdit();
             this.TXTBanka = new DevExpress.XtraEditors.TextEdit();
@@ -59,29 +61,28 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblToplamUrunKategori = new DevExpress.XtraEditors.LabelControl();
+            this.lblToplamCari = new DevExpress.XtraEditors.LabelControl();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
+            this.lblAktifCari = new DevExpress.XtraEditors.LabelControl();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
+            this.lblEnFazlaCariliIl = new DevExpress.XtraEditors.LabelControl();
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
+            this.lblToplamIl = new DevExpress.XtraEditors.LabelControl();
             this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit4 = new DevExpress.XtraEditors.PictureEdit();
-            this.TXTMail = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.TXTCariID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TXTTelNo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TXTSoyad.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TXTAd.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TXTMail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TXTIlce.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TXTIl.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TXTBanka.Properties)).BeginInit();
@@ -99,7 +100,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TXTMail.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // TXTCariID
@@ -122,7 +122,7 @@
             // 
             this.BTNListeleCariListesi.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.BTNListeleCariListesi.Appearance.Options.UseFont = true;
-            this.BTNListeleCariListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BTNListeleUrunListesi.ImageOptions.Image")));
+            this.BTNListeleCariListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BTNListeleCariListesi.ImageOptions.Image")));
             this.BTNListeleCariListesi.Location = new System.Drawing.Point(124, 488);
             this.BTNListeleCariListesi.Name = "BTNListeleCariListesi";
             this.BTNListeleCariListesi.Size = new System.Drawing.Size(125, 45);
@@ -134,7 +134,7 @@
             // 
             this.BTNGuncelleCariListesi.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.BTNGuncelleCariListesi.Appearance.Options.UseFont = true;
-            this.BTNGuncelleCariListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BTNGuncelleUrunListesi.ImageOptions.Image")));
+            this.BTNGuncelleCariListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BTNGuncelleCariListesi.ImageOptions.Image")));
             this.BTNGuncelleCariListesi.Location = new System.Drawing.Point(124, 437);
             this.BTNGuncelleCariListesi.Name = "BTNGuncelleCariListesi";
             this.BTNGuncelleCariListesi.Size = new System.Drawing.Size(125, 45);
@@ -146,7 +146,7 @@
             // 
             this.BTNSilCariListesi.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.BTNSilCariListesi.Appearance.Options.UseFont = true;
-            this.BTNSilCariListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BTNSilUrunListesi.ImageOptions.Image")));
+            this.BTNSilCariListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BTNSilCariListesi.ImageOptions.Image")));
             this.BTNSilCariListesi.Location = new System.Drawing.Point(124, 386);
             this.BTNSilCariListesi.Name = "BTNSilCariListesi";
             this.BTNSilCariListesi.Size = new System.Drawing.Size(125, 45);
@@ -158,7 +158,7 @@
             // 
             this.BTNKaydetCariListesi.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.BTNKaydetCariListesi.Appearance.Options.UseFont = true;
-            this.BTNKaydetCariListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BTNKaydetUrunListesi.ImageOptions.Image")));
+            this.BTNKaydetCariListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BTNKaydetCariListesi.ImageOptions.Image")));
             this.BTNKaydetCariListesi.Location = new System.Drawing.Point(124, 335);
             this.BTNKaydetCariListesi.Name = "BTNKaydetCariListesi";
             this.BTNKaydetCariListesi.Size = new System.Drawing.Size(125, 45);
@@ -271,6 +271,24 @@
             this.groupControl1.TabIndex = 3;
             this.groupControl1.Text = "Cari İşlemleri";
             // 
+            // TXTMail
+            // 
+            this.TXTMail.Location = new System.Drawing.Point(77, 129);
+            this.TXTMail.Name = "TXTMail";
+            this.TXTMail.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
+            this.TXTMail.Properties.MaskSettings.Set("MaskManagerSignature", "isOptimistic=False");
+            this.TXTMail.Properties.MaskSettings.Set("mask", "(\\(\\d\\d\\d\\) )?\\d{1,3}-\\d\\d-\\d\\d");
+            this.TXTMail.Size = new System.Drawing.Size(218, 20);
+            this.TXTMail.TabIndex = 35;
+            // 
+            // labelControl19
+            // 
+            this.labelControl19.Location = new System.Drawing.Point(58, 132);
+            this.labelControl19.Name = "labelControl19";
+            this.labelControl19.Size = new System.Drawing.Size(18, 13);
+            this.labelControl19.TabIndex = 34;
+            this.labelControl19.Text = "Mail";
+            // 
             // TXTIlce
             // 
             this.TXTIlce.Location = new System.Drawing.Point(77, 181);
@@ -377,7 +395,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(154)))), ((int)(((byte)(76)))));
-            this.panel1.Controls.Add(this.lblToplamUrunKategori);
+            this.panel1.Controls.Add(this.lblToplamCari);
             this.panel1.Controls.Add(this.labelControl12);
             this.panel1.Controls.Add(this.pictureEdit1);
             this.panel1.Location = new System.Drawing.Point(12, 12);
@@ -385,17 +403,17 @@
             this.panel1.Size = new System.Drawing.Size(243, 141);
             this.panel1.TabIndex = 4;
             // 
-            // lblToplamUrunKategori
+            // lblToplamCari
             // 
-            this.lblToplamUrunKategori.Appearance.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
-            this.lblToplamUrunKategori.Appearance.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblToplamUrunKategori.Appearance.Options.UseFont = true;
-            this.lblToplamUrunKategori.Appearance.Options.UseForeColor = true;
-            this.lblToplamUrunKategori.Location = new System.Drawing.Point(12, 78);
-            this.lblToplamUrunKategori.Name = "lblToplamUrunKategori";
-            this.lblToplamUrunKategori.Size = new System.Drawing.Size(19, 45);
-            this.lblToplamUrunKategori.TabIndex = 2;
-            this.lblToplamUrunKategori.Text = "0";
+            this.lblToplamCari.Appearance.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
+            this.lblToplamCari.Appearance.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblToplamCari.Appearance.Options.UseFont = true;
+            this.lblToplamCari.Appearance.Options.UseForeColor = true;
+            this.lblToplamCari.Location = new System.Drawing.Point(12, 78);
+            this.lblToplamCari.Name = "lblToplamCari";
+            this.lblToplamCari.Size = new System.Drawing.Size(19, 45);
+            this.lblToplamCari.TabIndex = 2;
+            this.lblToplamCari.Text = "0";
             // 
             // labelControl12
             // 
@@ -428,7 +446,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(164)))), ((int)(((byte)(86)))));
-            this.panel2.Controls.Add(this.labelControl13);
+            this.panel2.Controls.Add(this.lblAktifCari);
             this.panel2.Controls.Add(this.labelControl14);
             this.panel2.Controls.Add(this.pictureEdit2);
             this.panel2.Location = new System.Drawing.Point(261, 12);
@@ -436,17 +454,17 @@
             this.panel2.Size = new System.Drawing.Size(243, 141);
             this.panel2.TabIndex = 3;
             // 
-            // labelControl13
+            // lblAktifCari
             // 
-            this.labelControl13.Appearance.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
-            this.labelControl13.Appearance.ForeColor = System.Drawing.SystemColors.Control;
-            this.labelControl13.Appearance.Options.UseFont = true;
-            this.labelControl13.Appearance.Options.UseForeColor = true;
-            this.labelControl13.Location = new System.Drawing.Point(12, 78);
-            this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(19, 45);
-            this.labelControl13.TabIndex = 2;
-            this.labelControl13.Text = "0";
+            this.lblAktifCari.Appearance.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
+            this.lblAktifCari.Appearance.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblAktifCari.Appearance.Options.UseFont = true;
+            this.lblAktifCari.Appearance.Options.UseForeColor = true;
+            this.lblAktifCari.Location = new System.Drawing.Point(12, 78);
+            this.lblAktifCari.Name = "lblAktifCari";
+            this.lblAktifCari.Size = new System.Drawing.Size(19, 45);
+            this.lblAktifCari.TabIndex = 2;
+            this.lblAktifCari.Text = "0";
             // 
             // labelControl14
             // 
@@ -479,7 +497,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(184)))), ((int)(((byte)(106)))));
-            this.panel3.Controls.Add(this.labelControl15);
+            this.panel3.Controls.Add(this.lblEnFazlaCariliIl);
             this.panel3.Controls.Add(this.labelControl16);
             this.panel3.Controls.Add(this.pictureEdit3);
             this.panel3.Location = new System.Drawing.Point(759, 12);
@@ -487,17 +505,17 @@
             this.panel3.Size = new System.Drawing.Size(243, 141);
             this.panel3.TabIndex = 5;
             // 
-            // labelControl15
+            // lblEnFazlaCariliIl
             // 
-            this.labelControl15.Appearance.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
-            this.labelControl15.Appearance.ForeColor = System.Drawing.SystemColors.Control;
-            this.labelControl15.Appearance.Options.UseFont = true;
-            this.labelControl15.Appearance.Options.UseForeColor = true;
-            this.labelControl15.Location = new System.Drawing.Point(12, 78);
-            this.labelControl15.Name = "labelControl15";
-            this.labelControl15.Size = new System.Drawing.Size(19, 45);
-            this.labelControl15.TabIndex = 2;
-            this.labelControl15.Text = "0";
+            this.lblEnFazlaCariliIl.Appearance.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
+            this.lblEnFazlaCariliIl.Appearance.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblEnFazlaCariliIl.Appearance.Options.UseFont = true;
+            this.lblEnFazlaCariliIl.Appearance.Options.UseForeColor = true;
+            this.lblEnFazlaCariliIl.Location = new System.Drawing.Point(12, 78);
+            this.lblEnFazlaCariliIl.Name = "lblEnFazlaCariliIl";
+            this.lblEnFazlaCariliIl.Size = new System.Drawing.Size(19, 45);
+            this.lblEnFazlaCariliIl.TabIndex = 2;
+            this.lblEnFazlaCariliIl.Text = "0";
             // 
             // labelControl16
             // 
@@ -530,7 +548,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.panel4.Controls.Add(this.labelControl17);
+            this.panel4.Controls.Add(this.lblToplamIl);
             this.panel4.Controls.Add(this.labelControl18);
             this.panel4.Controls.Add(this.pictureEdit4);
             this.panel4.Location = new System.Drawing.Point(510, 12);
@@ -538,17 +556,17 @@
             this.panel4.Size = new System.Drawing.Size(243, 141);
             this.panel4.TabIndex = 6;
             // 
-            // labelControl17
+            // lblToplamIl
             // 
-            this.labelControl17.Appearance.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
-            this.labelControl17.Appearance.ForeColor = System.Drawing.SystemColors.Control;
-            this.labelControl17.Appearance.Options.UseFont = true;
-            this.labelControl17.Appearance.Options.UseForeColor = true;
-            this.labelControl17.Location = new System.Drawing.Point(12, 78);
-            this.labelControl17.Name = "labelControl17";
-            this.labelControl17.Size = new System.Drawing.Size(19, 45);
-            this.labelControl17.TabIndex = 2;
-            this.labelControl17.Text = "0";
+            this.lblToplamIl.Appearance.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
+            this.lblToplamIl.Appearance.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblToplamIl.Appearance.Options.UseFont = true;
+            this.lblToplamIl.Appearance.Options.UseForeColor = true;
+            this.lblToplamIl.Location = new System.Drawing.Point(12, 78);
+            this.lblToplamIl.Name = "lblToplamIl";
+            this.lblToplamIl.Size = new System.Drawing.Size(19, 45);
+            this.lblToplamIl.TabIndex = 2;
+            this.lblToplamIl.Text = "0";
             // 
             // labelControl18
             // 
@@ -578,24 +596,6 @@
             this.pictureEdit4.Size = new System.Drawing.Size(57, 57);
             this.pictureEdit4.TabIndex = 0;
             // 
-            // TXTMail
-            // 
-            this.TXTMail.Location = new System.Drawing.Point(77, 129);
-            this.TXTMail.Name = "TXTMail";
-            this.TXTMail.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
-            this.TXTMail.Properties.MaskSettings.Set("MaskManagerSignature", "isOptimistic=False");
-            this.TXTMail.Properties.MaskSettings.Set("mask", "(\\(\\d\\d\\d\\) )?\\d{1,3}-\\d\\d-\\d\\d");
-            this.TXTMail.Size = new System.Drawing.Size(218, 20);
-            this.TXTMail.TabIndex = 35;
-            // 
-            // labelControl19
-            // 
-            this.labelControl19.Location = new System.Drawing.Point(58, 132);
-            this.labelControl19.Name = "labelControl19";
-            this.labelControl19.Size = new System.Drawing.Size(18, 13);
-            this.labelControl19.TabIndex = 34;
-            this.labelControl19.Text = "Mail";
-            // 
             // FRMCariListesi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -617,6 +617,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TXTMail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TXTIlce.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TXTIl.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TXTBanka.Properties)).EndInit();
@@ -638,7 +639,6 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TXTMail.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -673,19 +673,19 @@
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.TextEdit TXTBanka;
         private System.Windows.Forms.Panel panel1;
-        private DevExpress.XtraEditors.LabelControl lblToplamUrunKategori;
+        private DevExpress.XtraEditors.LabelControl lblToplamCari;
         private DevExpress.XtraEditors.LabelControl labelControl12;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
         private System.Windows.Forms.Panel panel2;
-        private DevExpress.XtraEditors.LabelControl labelControl13;
+        private DevExpress.XtraEditors.LabelControl lblAktifCari;
         private DevExpress.XtraEditors.LabelControl labelControl14;
         private DevExpress.XtraEditors.PictureEdit pictureEdit2;
         private System.Windows.Forms.Panel panel3;
-        private DevExpress.XtraEditors.LabelControl labelControl15;
+        private DevExpress.XtraEditors.LabelControl lblEnFazlaCariliIl;
         private DevExpress.XtraEditors.LabelControl labelControl16;
         private DevExpress.XtraEditors.PictureEdit pictureEdit3;
         private System.Windows.Forms.Panel panel4;
-        private DevExpress.XtraEditors.LabelControl labelControl17;
+        private DevExpress.XtraEditors.LabelControl lblToplamIl;
         private DevExpress.XtraEditors.LabelControl labelControl18;
         private DevExpress.XtraEditors.PictureEdit pictureEdit4;
         private DevExpress.XtraEditors.TextEdit TXTIlce;

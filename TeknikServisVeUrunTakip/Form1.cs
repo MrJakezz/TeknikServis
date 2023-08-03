@@ -79,5 +79,19 @@ namespace TeknikServisVeUrunTakip
             
             fr.Show();
         }
+
+        private void BtnDepartmanListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FRMDepartman fr = new Formlar.FRMDepartman();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BtnYeniDepartman_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FRMYeniDepartman fr = new Formlar.FRMYeniDepartman();
+
+            fr.Show();
+        }
     }
 }

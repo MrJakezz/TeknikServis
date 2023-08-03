@@ -33,18 +33,26 @@ namespace TeknikServisVeUrunTakip.Classlar
 
             TBLUrun product = new TBLUrun();
 
-            product.AD = TXTUrunAd.Text;
-            product.MARKA = TXTMarka.Text;
-            product.ALISFIYAT = decimal.Parse(TXTAlisFiyat.Text);
-            product.SATISFIYAT = decimal.Parse(TXTSatisFiyat.Text);
-            product.KATEGORI = byte.Parse(lookUpEdit1.EditValue.ToString());
-            product.DURUM = false;
-            product.STOK = short.Parse(TXTStok.Text);
+            if (TXTUrunAd.Text != "" && TXTMarka.Text != "" && TXTAlisFiyat.Text != "" && TXTSatisFiyat.Text != "" && TXTStok.Text != "" && lookUpEdit1 != null)
+            {
+                product.AD = TXTUrunAd.Text;
+                product.MARKA = TXTMarka.Text;
+                product.ALISFIYAT = decimal.Parse(TXTAlisFiyat.Text);
+                product.SATISFIYAT = decimal.Parse(TXTSatisFiyat.Text);
+                product.KATEGORI = byte.Parse(lookUpEdit1.EditValue.ToString());
+                product.DURUM = false;
+                product.STOK = short.Parse(TXTStok.Text);
 
-            DB.TBLUrun.Add(product);
-            DB.SaveChanges();
+                DB.TBLUrun.Add(product);
+                DB.SaveChanges();
 
-            MessageBox.Show("Ürün başarıyla kaydedildi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                MessageBox.Show("Ürün başarıyla kaydedildi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Question);
+            }
+
+            else
+            {
+                MessageBox.Show("Lütfen tüm alanları doldurunuz!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
