@@ -400,7 +400,7 @@
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(357, 550);
             this.groupControl1.TabIndex = 9;
-            this.groupControl1.Text = "Cari İşlemleri";
+            this.groupControl1.Text = "Departman İşlemleri";
             // 
             // TXTAciklama
             // 

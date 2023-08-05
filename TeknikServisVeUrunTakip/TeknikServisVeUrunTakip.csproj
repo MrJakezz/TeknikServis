@@ -85,6 +85,7 @@
     <Compile Include="Classlar\Kategori Classlar\KaydetButtonKategori.cs" />
     <Compile Include="Classlar\Kategori Classlar\ListeleButtonKategori.cs" />
     <Compile Include="Classlar\Kategori Classlar\SilButtonKategori.cs" />
+    <Compile Include="Classlar\Personel Listesi Classlar\GosterFormPersonelListesi.cs" />
     <Compile Include="Classlar\Yeni Cari Classlar\KaydetButtonYeniCari.cs" />
     <Compile Include="Classlar\Yeni Departman Classlar\KaydetButtonYeniDepartman.cs" />
     <Compile Include="Classlar\Yeni Kategori Classlar\KaydetButtonYeniKategori.cs" />
@@ -137,6 +138,12 @@
     <Compile Include="Formlar\FRMMarkalar.Designer.cs">
       <DependentUpon>FRMMarkalar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\FRMPersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FRMPersonel.Designer.cs">
+      <DependentUpon>FRMPersonel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\FRMUrunListesi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +177,7 @@
     <Compile Include="LINQ Sorgular\CariChartLINQ.cs" />
     <Compile Include="LINQ Sorgular\DepartmanLINQ.cs" />
     <Compile Include="LINQ Sorgular\MarkaIstatistikleriLINQ.cs" />
+    <Compile Include="LINQ Sorgular\PersonelListesiLINQ.cs" />
     <Compile Include="LINQ Sorgular\UrunIstatistikleriLINQ.cs" />
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -254,6 +262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FRMMarkalar.resx">
       <DependentUpon>FRMMarkalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FRMPersonel.resx">
+      <DependentUpon>FRMPersonel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FRMUrunListesi.resx">
       <DependentUpon>FRMUrunListesi.cs</DependentUpon>

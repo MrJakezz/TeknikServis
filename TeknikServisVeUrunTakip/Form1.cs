@@ -93,5 +93,12 @@ namespace TeknikServisVeUrunTakip
 
             fr.Show();
         }
+
+        private void BtnPersonelListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FRMPersonel fr = new Formlar.FRMPersonel();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
