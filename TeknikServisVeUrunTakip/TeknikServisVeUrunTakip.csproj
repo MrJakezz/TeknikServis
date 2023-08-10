@@ -85,7 +85,12 @@
     <Compile Include="Classlar\Kategori Classlar\KaydetButtonKategori.cs" />
     <Compile Include="Classlar\Kategori Classlar\ListeleButtonKategori.cs" />
     <Compile Include="Classlar\Kategori Classlar\SilButtonKategori.cs" />
+    <Compile Include="Classlar\Personel Listesi Classlar\DepartmanSecPersonelListesi.cs" />
     <Compile Include="Classlar\Personel Listesi Classlar\GosterFormPersonelListesi.cs" />
+    <Compile Include="Classlar\Personel Listesi Classlar\GuncelleButtonPersonelListesi.cs" />
+    <Compile Include="Classlar\Personel Listesi Classlar\KaydetButtonPersonelListesi.cs" />
+    <Compile Include="Classlar\Personel Listesi Classlar\ListeleButtonPersonelListesi.cs" />
+    <Compile Include="Classlar\Personel Listesi Classlar\SilButtonPersonelListesi.cs" />
     <Compile Include="Classlar\Yeni Cari Classlar\KaydetButtonYeniCari.cs" />
     <Compile Include="Classlar\Yeni Departman Classlar\KaydetButtonYeniDepartman.cs" />
     <Compile Include="Classlar\Yeni Kategori Classlar\KaydetButtonYeniKategori.cs" />
@@ -132,6 +137,12 @@
     <Compile Include="Formlar\FRMKategori.Designer.cs">
       <DependentUpon>FRMKategori.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\FRMKurlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FRMKurlar.Designer.cs">
+      <DependentUpon>FRMKurlar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\FRMMarkalar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +184,12 @@
     </Compile>
     <Compile Include="Formlar\FRMYeniUrun.Designer.cs">
       <DependentUpon>FRMYeniUrun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FRMYoutube.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FRMYoutube.Designer.cs">
+      <DependentUpon>FRMYoutube.cs</DependentUpon>
     </Compile>
     <Compile Include="LINQ Sorgular\CariChartLINQ.cs" />
     <Compile Include="LINQ Sorgular\DepartmanLINQ.cs" />
@@ -260,6 +277,9 @@
     <EmbeddedResource Include="Formlar\FRMKategori.resx">
       <DependentUpon>FRMKategori.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FRMKurlar.resx">
+      <DependentUpon>FRMKurlar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FRMMarkalar.resx">
       <DependentUpon>FRMMarkalar.cs</DependentUpon>
     </EmbeddedResource>
@@ -280,6 +300,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FRMYeniUrun.resx">
       <DependentUpon>FRMYeniUrun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FRMYoutube.resx">
+      <DependentUpon>FRMYoutube.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

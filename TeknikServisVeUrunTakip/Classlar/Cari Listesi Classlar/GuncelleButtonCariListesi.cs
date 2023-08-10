@@ -41,26 +41,34 @@ namespace TeknikServisVeUrunTakip.Classlar.Cari_Listesi_Classlar
         {
             DBTeknikServisEntities DB = new DBTeknikServisEntities();
 
-            int ID = int.Parse(TXTCariID.Text);
+            if (TXTAd.Text != "" && TXTSoyad.Text != "" && TXTTelNo.Text != "" && TXTMail.Text != "" && TXTIl.Text != "" && TXTIlce.Text != "" && TXTBanka.Text != "" && TXTVergiDairesi.Text != "" && TXTVergiNo.Text != "" && TXTStatu.Text != "" && TXTAdres.Text != "") {
 
-            var value = DB.TBLCari.Find(ID);
+                int ID = int.Parse(TXTCariID.Text);
 
-            value.AD = TXTAd.Text;
-            value.SOYAD = TXTSoyad.Text;
-            value.TELEFON = TXTTelNo.Text;
-            value.MAIL = TXTMail.Text;
-            value.IL = TXTIl.Text;
-            value.ILCE = TXTIlce.Text;
-            value.BANKA = TXTBanka.Text;
-            value.VERGIDAIRESI = TXTVergiDairesi.Text;
-            value.VERGINO = TXTVergiNo.Text;
-            value.STATU = TXTStatu.Text;
-            value.ADRES = TXTAdres.Text;
+                var value = DB.TBLCari.Find(ID);
+
+                value.AD = TXTAd.Text;
+                value.SOYAD = TXTSoyad.Text;
+                value.TELEFON = TXTTelNo.Text;
+                value.MAIL = TXTMail.Text;
+                value.IL = TXTIl.Text;
+                value.ILCE = TXTIlce.Text;
+                value.BANKA = TXTBanka.Text;
+                value.VERGIDAIRESI = TXTVergiDairesi.Text;
+                value.VERGINO = TXTVergiNo.Text;
+                value.STATU = TXTStatu.Text;
+                value.ADRES = TXTAdres.Text;
 
 
-            DB.SaveChanges();
+                DB.SaveChanges();
 
-            MessageBox.Show("Cari başarıyla güncellendi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Cari başarıyla güncellendi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            else
+            {
+                MessageBox.Show("Lütfen tüm alanları doldurunuz!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

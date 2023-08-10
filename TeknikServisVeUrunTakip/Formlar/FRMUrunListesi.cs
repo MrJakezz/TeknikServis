@@ -30,8 +30,6 @@ namespace TeknikServisVeUrunTakip.Formlar
 
             KategoriSecUrunListesi categoryObj = new KategoriSecUrunListesi(lookUpEdit1);
             categoryObj.Kategori();
-
-            //lookUpEdit1.Properties.DataSource = DB.TBLKategori.ToList();
         }
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)

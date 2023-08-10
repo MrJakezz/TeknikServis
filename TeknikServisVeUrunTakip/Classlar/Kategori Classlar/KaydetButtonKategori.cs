@@ -22,13 +22,21 @@ namespace TeknikServisVeUrunTakip.Classlar.Kategori_Classlar
             DBTeknikServisEntities DB = new DBTeknikServisEntities();
 
             TBLKategori product = new TBLKategori();
+            
+            if (TXTKategoriAd.Text != "") {
 
-            product.AD = TXTKategoriAd.Text;
+                product.AD = TXTKategoriAd.Text;
 
-            DB.TBLKategori.Add(product);
-            DB.SaveChanges();
+                DB.TBLKategori.Add(product);
+                DB.SaveChanges();
 
-            MessageBox.Show("Kategori başarıyla kaydedildi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                MessageBox.Show("Kategori başarıyla kaydedildi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Question);
+            }
+
+            else
+            {
+                MessageBox.Show("Lütfen tüm alanları doldurunuz!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

@@ -100,5 +100,28 @@ namespace TeknikServisVeUrunTakip
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void BtnHesapMakinesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            System.Diagnostics.Process.Start("calc.exe");
+        }
+
+        private void BtnKurlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FRMKurlar fr = new Formlar.FRMKurlar();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BtnWord_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            System.Diagnostics.Process.Start("winword");
+        }
+
+        private void BtnExcel_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            System.Diagnostics.Process.Start("excel.exe");
+        }
+
     }
 }

@@ -32,21 +32,29 @@ namespace TeknikServisVeUrunTakip.Classlar
         {
             DBTeknikServisEntities DB = new DBTeknikServisEntities();
 
-            int ID = int.Parse(TXTID.Text);
+            if (TXTUrunAd.Text != "" && TXTMarka.Text != "" && TXTAlisFiyat.Text != "" && TXTSatisFiyat.Text != "" && TXTStok.Text != "" && lookUpEdit1 != null) {
 
-            var value = DB.TBLUrun.Find(ID);
+                int ID = int.Parse(TXTID.Text);
 
-            value.AD = TXTUrunAd.Text;
-            value.MARKA = TXTMarka.Text;
-            value.STOK = short.Parse(TXTStok.Text);
-            value.KATEGORI = byte.Parse(lookUpEdit1.EditValue.ToString());
-            value.ALISFIYAT = decimal.Parse(TXTAlisFiyat.Text);
-            value.SATISFIYAT = decimal.Parse(TXTSatisFiyat.Text);
-            
+                var value = DB.TBLUrun.Find(ID);
 
-            DB.SaveChanges();
+                value.AD = TXTUrunAd.Text;
+                value.MARKA = TXTMarka.Text;
+                value.STOK = short.Parse(TXTStok.Text);
+                value.KATEGORI = byte.Parse(lookUpEdit1.EditValue.ToString());
+                value.ALISFIYAT = decimal.Parse(TXTAlisFiyat.Text);
+                value.SATISFIYAT = decimal.Parse(TXTSatisFiyat.Text);
 
-            MessageBox.Show("Ürün başarıyla güncellendi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                DB.SaveChanges();
+
+                MessageBox.Show("Ürün başarıyla güncellendi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            else
+            {
+                MessageBox.Show("Lütfen tüm alanları doldurunuz!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

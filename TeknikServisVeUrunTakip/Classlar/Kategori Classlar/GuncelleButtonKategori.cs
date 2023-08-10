@@ -23,16 +23,24 @@ namespace TeknikServisVeUrunTakip.Classlar.Kategori_Classlar
         {
             DBTeknikServisEntities DB = new DBTeknikServisEntities();
 
-            int ID = int.Parse(TXTKategoriID.Text);
+            if (TXTKategoriAd.Text != "") {
 
-            var value = DB.TBLKategori.Find(ID);
+                int ID = int.Parse(TXTKategoriID.Text);
 
-            value.AD = TXTKategoriAd.Text;
-            
+                var value = DB.TBLKategori.Find(ID);
 
-            DB.SaveChanges();
+                value.AD = TXTKategoriAd.Text;
 
-            MessageBox.Show("Kategori başarıyla güncellendi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                DB.SaveChanges();
+
+                MessageBox.Show("Kategori başarıyla güncellendi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            else
+            {
+                MessageBox.Show("Lütfen tüm alanları doldurunuz!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

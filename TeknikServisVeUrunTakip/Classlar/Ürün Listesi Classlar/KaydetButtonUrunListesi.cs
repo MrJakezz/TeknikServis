@@ -33,7 +33,7 @@ namespace TeknikServisVeUrunTakip.Classlar
 
             TBLUrun product = new TBLUrun();
 
-            if (TXTUrunAd.Text != "" && TXTMarka.Text != "" && TXTAlisFiyat.Text != "" && TXTSatisFiyat.Text != "" && TXTStok.Text != "" && lookUpEdit1 != null)
+            if (TXTUrunAd.Text != "" && TXTMarka.Text != "" && TXTAlisFiyat.Text != "" && TXTSatisFiyat.Text != "" && TXTStok.Text != "" && lookUpEdit1.Text != "")
             {
                 product.AD = TXTUrunAd.Text;
                 product.MARKA = TXTMarka.Text;

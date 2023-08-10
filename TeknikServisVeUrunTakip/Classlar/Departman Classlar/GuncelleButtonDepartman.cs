@@ -25,16 +25,24 @@ namespace TeknikServisVeUrunTakip.Classlar.Departman_Classlar
         {
             DBTeknikServisEntities DB = new DBTeknikServisEntities();
 
-            int ID = int.Parse(TXTDepartmanID.Text);
+            if (TXTDepartmanAd.Text != "" && TXTAciklama.Text != "") {
 
-            var value = DB.TBLDepartman.Find(ID);
+                int ID = int.Parse(TXTDepartmanID.Text);
 
-            value.AD = TXTDepartmanAd.Text;
-            value.ACIKLAMA = TXTAciklama.Text;
+                var value = DB.TBLDepartman.Find(ID);
 
-            DB.SaveChanges();
+                value.AD = TXTDepartmanAd.Text;
+                value.ACIKLAMA = TXTAciklama.Text;
 
-            MessageBox.Show("Departman başarıyla güncellendi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                DB.SaveChanges();
+
+                MessageBox.Show("Departman başarıyla güncellendi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            else
+            {
+                MessageBox.Show("Lütfen tüm alanları doldurunuz!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

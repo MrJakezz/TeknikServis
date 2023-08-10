@@ -190,7 +190,7 @@
             this.Controls.Add(this.pictureEdit2);
             this.Controls.Add(this.txtDepartmanAd);
             this.Controls.Add(this.pictureEdit1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FRMYeniDepartman";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRMYeniDepartman";

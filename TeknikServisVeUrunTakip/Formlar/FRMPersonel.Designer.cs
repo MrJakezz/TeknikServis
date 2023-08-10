@@ -44,12 +44,10 @@
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.labelControl31 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl30 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl29 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl28 = new DevExpress.XtraEditors.LabelControl();
-            this.TXTPersonelDepartman = new DevExpress.XtraEditors.LookUpEdit();
+            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
             this.TXTPersonelTel = new DevExpress.XtraEditors.TextEdit();
             this.TXTPersonelMail = new DevExpress.XtraEditors.TextEdit();
-            this.TXTPersonelFoto = new DevExpress.XtraEditors.TextEdit();
             this.TXTPersonelSoyad = new DevExpress.XtraEditors.TextEdit();
             this.panel1 = new System.Windows.Forms.Panel();
             this.LBLMail1 = new DevExpress.XtraEditors.LabelControl();
@@ -90,10 +88,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TXTPersonelDepartman.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TXTPersonelTel.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TXTPersonelMail.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TXTPersonelFoto.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TXTPersonelSoyad.Properties)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
@@ -127,33 +124,36 @@
             this.BTNListelePersonel.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.BTNListelePersonel.Appearance.Options.UseFont = true;
             this.BTNListelePersonel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BTNListelePersonel.ImageOptions.Image")));
-            this.BTNListelePersonel.Location = new System.Drawing.Point(123, 396);
+            this.BTNListelePersonel.Location = new System.Drawing.Point(123, 370);
             this.BTNListelePersonel.Name = "BTNListelePersonel";
             this.BTNListelePersonel.Size = new System.Drawing.Size(125, 45);
             this.BTNListelePersonel.TabIndex = 18;
             this.BTNListelePersonel.Text = "LİSTELE";
+            this.BTNListelePersonel.Click += new System.EventHandler(this.BTNListelePersonel_Click);
             // 
             // BTNGuncellePersonel
             // 
             this.BTNGuncellePersonel.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.BTNGuncellePersonel.Appearance.Options.UseFont = true;
             this.BTNGuncellePersonel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BTNGuncellePersonel.ImageOptions.Image")));
-            this.BTNGuncellePersonel.Location = new System.Drawing.Point(123, 345);
+            this.BTNGuncellePersonel.Location = new System.Drawing.Point(123, 319);
             this.BTNGuncellePersonel.Name = "BTNGuncellePersonel";
             this.BTNGuncellePersonel.Size = new System.Drawing.Size(125, 45);
             this.BTNGuncellePersonel.TabIndex = 17;
             this.BTNGuncellePersonel.Text = "GÜNCELLE";
+            this.BTNGuncellePersonel.Click += new System.EventHandler(this.BTNGuncellePersonel_Click);
             // 
             // BTNSilPersonel
             // 
             this.BTNSilPersonel.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.BTNSilPersonel.Appearance.Options.UseFont = true;
             this.BTNSilPersonel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BTNSilPersonel.ImageOptions.Image")));
-            this.BTNSilPersonel.Location = new System.Drawing.Point(123, 294);
+            this.BTNSilPersonel.Location = new System.Drawing.Point(123, 268);
             this.BTNSilPersonel.Name = "BTNSilPersonel";
             this.BTNSilPersonel.Size = new System.Drawing.Size(125, 45);
             this.BTNSilPersonel.TabIndex = 16;
             this.BTNSilPersonel.Text = "SİL";
+            this.BTNSilPersonel.Click += new System.EventHandler(this.BTNSilPersonel_Click);
             // 
             // labelControl2
             // 
@@ -185,13 +185,14 @@
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(0, 353);
+            this.gridControl1.Location = new System.Drawing.Point(0, 302);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1002, 198);
+            this.gridControl1.Size = new System.Drawing.Size(1002, 249);
             this.gridControl1.TabIndex = 13;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -201,22 +202,21 @@
             this.BTNKaydetPersonel.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.BTNKaydetPersonel.Appearance.Options.UseFont = true;
             this.BTNKaydetPersonel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BTNKaydetPersonel.ImageOptions.Image")));
-            this.BTNKaydetPersonel.Location = new System.Drawing.Point(123, 243);
+            this.BTNKaydetPersonel.Location = new System.Drawing.Point(123, 217);
             this.BTNKaydetPersonel.Name = "BTNKaydetPersonel";
             this.BTNKaydetPersonel.Size = new System.Drawing.Size(125, 45);
             this.BTNKaydetPersonel.TabIndex = 15;
             this.BTNKaydetPersonel.Text = "KAYDET";
+            this.BTNKaydetPersonel.Click += new System.EventHandler(this.BTNKaydetPersonel_Click);
             // 
             // groupControl1
             // 
             this.groupControl1.Controls.Add(this.labelControl31);
             this.groupControl1.Controls.Add(this.labelControl30);
-            this.groupControl1.Controls.Add(this.labelControl29);
             this.groupControl1.Controls.Add(this.labelControl28);
-            this.groupControl1.Controls.Add(this.TXTPersonelDepartman);
+            this.groupControl1.Controls.Add(this.lookUpEdit1);
             this.groupControl1.Controls.Add(this.TXTPersonelTel);
             this.groupControl1.Controls.Add(this.TXTPersonelMail);
-            this.groupControl1.Controls.Add(this.TXTPersonelFoto);
             this.groupControl1.Controls.Add(this.TXTPersonelSoyad);
             this.groupControl1.Controls.Add(this.TXTPersonelID);
             this.groupControl1.Controls.Add(this.labelControl7);
@@ -235,7 +235,7 @@
             // 
             // labelControl31
             // 
-            this.labelControl31.Location = new System.Drawing.Point(38, 220);
+            this.labelControl31.Location = new System.Drawing.Point(38, 194);
             this.labelControl31.Name = "labelControl31";
             this.labelControl31.Size = new System.Drawing.Size(36, 13);
             this.labelControl31.TabIndex = 30;
@@ -243,19 +243,11 @@
             // 
             // labelControl30
             // 
-            this.labelControl30.Location = new System.Drawing.Point(56, 193);
+            this.labelControl30.Location = new System.Drawing.Point(56, 167);
             this.labelControl30.Name = "labelControl30";
             this.labelControl30.Size = new System.Drawing.Size(18, 13);
             this.labelControl30.TabIndex = 29;
             this.labelControl30.Text = "Mail";
-            // 
-            // labelControl29
-            // 
-            this.labelControl29.Location = new System.Drawing.Point(31, 167);
-            this.labelControl29.Name = "labelControl29";
-            this.labelControl29.Size = new System.Drawing.Size(43, 13);
-            this.labelControl29.TabIndex = 28;
-            this.labelControl29.Text = "Fotoğraf";
             // 
             // labelControl28
             // 
@@ -265,37 +257,32 @@
             this.labelControl28.TabIndex = 27;
             this.labelControl28.Text = "Departman";
             // 
-            // TXTPersonelDepartman
+            // lookUpEdit1
             // 
-            this.TXTPersonelDepartman.EditValue = "";
-            this.TXTPersonelDepartman.Location = new System.Drawing.Point(80, 138);
-            this.TXTPersonelDepartman.Name = "TXTPersonelDepartman";
-            this.TXTPersonelDepartman.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.lookUpEdit1.EditValue = "Departman seçiniz";
+            this.lookUpEdit1.Location = new System.Drawing.Point(80, 138);
+            this.lookUpEdit1.Name = "lookUpEdit1";
+            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.TXTPersonelDepartman.Properties.NullText = "Departman seçiniz";
-            this.TXTPersonelDepartman.Size = new System.Drawing.Size(218, 20);
-            this.TXTPersonelDepartman.TabIndex = 26;
+            this.lookUpEdit1.Properties.DisplayMember = "AD";
+            this.lookUpEdit1.Properties.NullText = "Departman seçiniz";
+            this.lookUpEdit1.Properties.ValueMember = "ID";
+            this.lookUpEdit1.Size = new System.Drawing.Size(218, 20);
+            this.lookUpEdit1.TabIndex = 26;
             // 
             // TXTPersonelTel
             // 
-            this.TXTPersonelTel.Location = new System.Drawing.Point(80, 217);
+            this.TXTPersonelTel.Location = new System.Drawing.Point(80, 191);
             this.TXTPersonelTel.Name = "TXTPersonelTel";
             this.TXTPersonelTel.Size = new System.Drawing.Size(218, 20);
             this.TXTPersonelTel.TabIndex = 25;
             // 
             // TXTPersonelMail
             // 
-            this.TXTPersonelMail.Location = new System.Drawing.Point(80, 190);
+            this.TXTPersonelMail.Location = new System.Drawing.Point(80, 164);
             this.TXTPersonelMail.Name = "TXTPersonelMail";
             this.TXTPersonelMail.Size = new System.Drawing.Size(218, 20);
             this.TXTPersonelMail.TabIndex = 24;
-            // 
-            // TXTPersonelFoto
-            // 
-            this.TXTPersonelFoto.Location = new System.Drawing.Point(80, 164);
-            this.TXTPersonelFoto.Name = "TXTPersonelFoto";
-            this.TXTPersonelFoto.Size = new System.Drawing.Size(218, 20);
-            this.TXTPersonelFoto.TabIndex = 23;
             // 
             // TXTPersonelSoyad
             // 
@@ -306,7 +293,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(61)))), ((int)(((byte)(98)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(35)))), ((int)(((byte)(114)))));
             this.panel1.Controls.Add(this.LBLMail1);
             this.panel1.Controls.Add(this.LBLDepartman1);
             this.panel1.Controls.Add(this.LBLAdSoyad1);
@@ -395,7 +382,7 @@
             // 
             this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
             this.pictureEdit1.Enabled = false;
-            this.pictureEdit1.Location = new System.Drawing.Point(33, 32);
+            this.pictureEdit1.Location = new System.Drawing.Point(34, 20);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
@@ -407,7 +394,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(61)))), ((int)(((byte)(98)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(55)))), ((int)(((byte)(124)))));
             this.panel2.Controls.Add(this.LBLMail2);
             this.panel2.Controls.Add(this.LBLDepartman2);
             this.panel2.Controls.Add(this.LBLAdSoyad2);
@@ -496,7 +483,7 @@
             // 
             this.pictureEdit2.EditValue = ((object)(resources.GetObject("pictureEdit2.EditValue")));
             this.pictureEdit2.Enabled = false;
-            this.pictureEdit2.Location = new System.Drawing.Point(33, 42);
+            this.pictureEdit2.Location = new System.Drawing.Point(36, 20);
             this.pictureEdit2.Name = "pictureEdit2";
             this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit2.Properties.Appearance.Options.UseBackColor = true;
@@ -508,7 +495,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(61)))), ((int)(((byte)(98)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(75)))), ((int)(((byte)(144)))));
             this.panel3.Controls.Add(this.labelControl16);
             this.panel3.Controls.Add(this.LBLDepartman3);
             this.panel3.Controls.Add(this.LBLAdSoyad3);
@@ -597,19 +584,19 @@
             // 
             this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
             this.pictureEdit3.Enabled = false;
-            this.pictureEdit3.Location = new System.Drawing.Point(43, 32);
+            this.pictureEdit3.Location = new System.Drawing.Point(35, 20);
             this.pictureEdit3.Name = "pictureEdit3";
             this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit3.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.pictureEdit3.Size = new System.Drawing.Size(136, 165);
+            this.pictureEdit3.Size = new System.Drawing.Size(151, 160);
             this.pictureEdit3.TabIndex = 0;
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(61)))), ((int)(((byte)(98)))));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(95)))), ((int)(((byte)(164)))));
             this.panel4.Controls.Add(this.labelControl22);
             this.panel4.Controls.Add(this.LBLDepartman4);
             this.panel4.Controls.Add(this.LBLAdSoyad4);
@@ -698,14 +685,14 @@
             // 
             this.pictureEdit4.EditValue = ((object)(resources.GetObject("pictureEdit4.EditValue")));
             this.pictureEdit4.Enabled = false;
-            this.pictureEdit4.Location = new System.Drawing.Point(52, 42);
+            this.pictureEdit4.Location = new System.Drawing.Point(35, 20);
             this.pictureEdit4.Name = "pictureEdit4";
             this.pictureEdit4.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit4.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit4.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit4.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit4.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.pictureEdit4.Size = new System.Drawing.Size(117, 138);
+            this.pictureEdit4.Size = new System.Drawing.Size(151, 160);
             this.pictureEdit4.TabIndex = 0;
             // 
             // FRMPersonel
@@ -729,10 +716,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TXTPersonelDepartman.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TXTPersonelTel.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TXTPersonelMail.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TXTPersonelFoto.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TXTPersonelSoyad.Properties)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -799,12 +785,10 @@
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
         private DevExpress.XtraEditors.LabelControl labelControl31;
         private DevExpress.XtraEditors.LabelControl labelControl30;
-        private DevExpress.XtraEditors.LabelControl labelControl29;
         private DevExpress.XtraEditors.LabelControl labelControl28;
-        private DevExpress.XtraEditors.LookUpEdit TXTPersonelDepartman;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
         private DevExpress.XtraEditors.TextEdit TXTPersonelTel;
         private DevExpress.XtraEditors.TextEdit TXTPersonelMail;
-        private DevExpress.XtraEditors.TextEdit TXTPersonelFoto;
         private DevExpress.XtraEditors.TextEdit TXTPersonelSoyad;
     }
 }

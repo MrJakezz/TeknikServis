@@ -112,7 +112,7 @@
             // 
             this.BtnCancelKategori.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCancelKategori.Appearance.Options.UseFont = true;
-            this.BtnCancelKategori.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnCancel.ImageOptions.SvgImage")));
+            this.BtnCancelKategori.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnCancelKategori.ImageOptions.SvgImage")));
             this.BtnCancelKategori.Location = new System.Drawing.Point(107, 174);
             this.BtnCancelKategori.Name = "BtnCancelKategori";
             this.BtnCancelKategori.Size = new System.Drawing.Size(96, 37);
@@ -124,7 +124,7 @@
             // 
             this.BtnSaveKategori.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.BtnSaveKategori.Appearance.Options.UseFont = true;
-            this.BtnSaveKategori.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnSave.ImageOptions.SvgImage")));
+            this.BtnSaveKategori.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnSaveKategori.ImageOptions.SvgImage")));
             this.BtnSaveKategori.Location = new System.Drawing.Point(231, 174);
             this.BtnSaveKategori.Name = "BtnSaveKategori";
             this.BtnSaveKategori.Size = new System.Drawing.Size(96, 37);
@@ -145,7 +145,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtKategoriAd);
             this.Controls.Add(this.pictureEdit1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FRMYeniKategori";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRMYeniKategori";
