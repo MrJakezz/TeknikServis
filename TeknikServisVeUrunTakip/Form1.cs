@@ -123,5 +123,18 @@ namespace TeknikServisVeUrunTakip
             System.Diagnostics.Process.Start("excel.exe");
         }
 
+        private void BtnYoutube_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FRMYoutube fr = new Formlar.FRMYoutube();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BtnAjanda_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FRMNotlar fr = new Formlar.FRMNotlar();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }

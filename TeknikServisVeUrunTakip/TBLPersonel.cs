@@ -26,7 +26,6 @@ namespace TeknikServisVeUrunTakip
         public string AD { get; set; }
         public string SOYAD { get; set; }
         public Nullable<byte> DEPARTMAN { get; set; }
-        public string FOTOGRAF { get; set; }
         public string MAIL { get; set; }
         public string TELEFON { get; set; }
     

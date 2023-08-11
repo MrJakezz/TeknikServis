@@ -85,6 +85,11 @@
     <Compile Include="Classlar\Kategori Classlar\KaydetButtonKategori.cs" />
     <Compile Include="Classlar\Kategori Classlar\ListeleButtonKategori.cs" />
     <Compile Include="Classlar\Kategori Classlar\SilButtonKategori.cs" />
+    <Compile Include="Classlar\Notlar Classlar\GuncelleButtonNotlar.cs" />
+    <Compile Include="Classlar\Notlar Classlar\KaydetButtonNotlar.cs" />
+    <Compile Include="Classlar\Notlar Classlar\ListeleButtonNotlar.cs" />
+    <Compile Include="Classlar\Notlar Classlar\GosterFormNotlar.cs" />
+    <Compile Include="Classlar\Notlar Classlar\SilButtonNotlar.cs" />
     <Compile Include="Classlar\Personel Listesi Classlar\DepartmanSecPersonelListesi.cs" />
     <Compile Include="Classlar\Personel Listesi Classlar\GosterFormPersonelListesi.cs" />
     <Compile Include="Classlar\Personel Listesi Classlar\GuncelleButtonPersonelListesi.cs" />
@@ -148,6 +153,12 @@
     </Compile>
     <Compile Include="Formlar\FRMMarkalar.Designer.cs">
       <DependentUpon>FRMMarkalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FRMNotlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FRMNotlar.Designer.cs">
+      <DependentUpon>FRMNotlar.cs</DependentUpon>
     </Compile>
     <Compile Include="Formlar\FRMPersonel.cs">
       <SubType>Form</SubType>
@@ -282,6 +293,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FRMMarkalar.resx">
       <DependentUpon>FRMMarkalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FRMNotlar.resx">
+      <DependentUpon>FRMNotlar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FRMPersonel.resx">
       <DependentUpon>FRMPersonel.cs</DependentUpon>

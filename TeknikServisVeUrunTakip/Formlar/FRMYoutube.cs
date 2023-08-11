@@ -19,7 +19,7 @@ namespace TeknikServisVeUrunTakip.Formlar
 
         private void FRMYoutube_Load(object sender, EventArgs e)
         {
-            webBrowser1.Navigate("youtube.com");
+            webBrowser1.Navigate("https://youtube.com");
         }
     }
 }

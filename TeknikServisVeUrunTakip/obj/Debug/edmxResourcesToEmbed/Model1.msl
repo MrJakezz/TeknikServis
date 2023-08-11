@@ -122,7 +122,6 @@
           <ScalarProperty Name="AD" ColumnName="AD" />
           <ScalarProperty Name="SOYAD" ColumnName="SOYAD" />
           <ScalarProperty Name="DEPARTMAN" ColumnName="DEPARTMAN" />
-          <ScalarProperty Name="FOTOGRAF" ColumnName="FOTOGRAF" />
           <ScalarProperty Name="MAIL" ColumnName="MAIL" />
           <ScalarProperty Name="TELEFON" ColumnName="TELEFON" />
         </MappingFragment>

@@ -26,8 +26,7 @@ namespace TeknikServisVeUrunTakip.Formlar
         private void BtnSave_Click(object sender, EventArgs e)
         {
             KaydetButtonYeniUrun saveObj = new KaydetButtonYeniUrun(txtUrunAd, txtMarka, txtAlisFiyat, txtSatisFiyat, txtStok, txtKategori);
-            saveObj.Kaydet();
-             
+            saveObj.Kaydet();             
         }
     }
 }

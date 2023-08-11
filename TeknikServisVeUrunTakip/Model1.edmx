@@ -502,7 +502,6 @@
           <Property Name="AD" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="SOYAD" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="DEPARTMAN" Type="Byte" />
-          <Property Name="FOTOGRAF" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
           <Property Name="MAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="TELEFON" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="TBLDepartman" Relationship="Self.FK_TBLPersonel_TBLDepartman" FromRole="TBLPersonel" ToRole="TBLDepartman" />
@@ -903,7 +902,6 @@
                 <ScalarProperty Name="AD" ColumnName="AD" />
                 <ScalarProperty Name="SOYAD" ColumnName="SOYAD" />
                 <ScalarProperty Name="DEPARTMAN" ColumnName="DEPARTMAN" />
-                <ScalarProperty Name="FOTOGRAF" ColumnName="FOTOGRAF" />
                 <ScalarProperty Name="MAIL" ColumnName="MAIL" />
                 <ScalarProperty Name="TELEFON" ColumnName="TELEFON" />
               </MappingFragment>
